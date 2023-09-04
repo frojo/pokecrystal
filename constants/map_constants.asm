@@ -501,4 +501,8 @@ ENDM
 	map_const ROUTE_31_VIOLET_GATE,                         5,  4 ; 11
 	endgroup
 
-DEF NUM_MAP_GROUPS EQU const_value ; 26
+  newgroup BEACH                                                ; 27
+  map_const DREADED_COVE,                                20, 18 ; 1
+  endgroup
+
+DEF NUM_MAP_GROUPS EQU const_value ; 27

@@ -43,6 +43,7 @@ MapGroupPointers::
 	dw MapGroup_NewBark     ; 24
 	dw MapGroup_Saffron     ; 25
 	dw MapGroup_Cherrygrove ; 26
+	dw MapGroup_Beach       ; 27
 	assert_table_length NUM_MAP_GROUPS
 
 MapGroup_Olivine:
@@ -536,3 +537,8 @@ MapGroup_Cherrygrove:
 	map MrPokemonsHouse, TILESET_FACILITY, INDOOR, LANDMARK_ROUTE_30, MUSIC_CHERRYGROVE_CITY, FALSE, PALETTE_DAY, FISHGROUP_SHORE
 	map Route31VioletGate, TILESET_GATE, GATE, LANDMARK_ROUTE_31, MUSIC_ROUTE_30, FALSE, PALETTE_DAY, FISHGROUP_SHORE
 	assert_table_length NUM_CHERRYGROVE_MAPS
+
+MapGroup_Beach:
+	table_width MAP_LENGTH, MapGroup_Beach
+  map DreadedCove, TILESET_JOHTO, ROUTE, LANDMARK_CHERRYGROVE_CITY, MUSIC_ROUTE_30, FALSE, PALETTE_AUTO, FISHGROUP_SHORE
+	assert_table_length NUM_BEACH_MAPS

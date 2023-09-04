@@ -66,7 +66,7 @@ MainMenu:
 .Strings:
 ; entries correspond to MAINMENUITEM_* constants
 	db "CONTINUE@"
-	db "NEW GAME@"
+	db "LET'S BEGIN@"
 	db "OPTION@"
 	db "MYSTERY GIFT@"
 	db "MOBILE@"
@@ -91,9 +91,8 @@ MainMenuItems:
 ; entries correspond to MAINMENU_* constants
 
 	; MAINMENU_NEW_GAME
-	db 2
+	db 1
 	db MAINMENUITEM_NEW_GAME
-	db MAINMENUITEM_OPTION
 	db -1
 
 	; MAINMENU_CONTINUE

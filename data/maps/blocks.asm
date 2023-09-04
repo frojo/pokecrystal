@@ -1045,3 +1045,8 @@ BetaBlank_Blocks: ; unreferenced
 
 GoldenrodDeptStoreRoof_Blocks:
 	INCBIN "maps/GoldenrodDeptStoreRoof.blk"
+
+SECTION "Map Blocks 4", ROMX
+
+DreadedCove_Blocks:
+	INCBIN "maps/DreadedCove.blk"

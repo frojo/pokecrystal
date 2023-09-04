@@ -72,9 +72,9 @@ _TitleScreen:
 	ld a, 6
 	call ByteFill
 
-; 'CRYSTAL VERSION'
+; 'I LOVE MY SQUISH'
 	hlbgcoord 5, 9
-	ld bc, 11 ; length of version text
+	ld bc, 16 ; length of version text
 	ld a, 1
 	call ByteFill
 

@@ -63,14 +63,14 @@ NewGame:
 	ld [wDebugFlags], a
 	call ResetWRAM
 	call NewGame_ClearTilemapEtc
-	call PlayerProfileSetup
-	call OakSpeech
-	call InitializeWorld
+	; call PlayerProfileSetup
+	; call OakSpeech
+	; call InitializeWorld
 
 	ld a, LANDMARK_NEW_BARK_TOWN
 	ld [wPrevLandmark], a
 
-	ld a, SPAWN_HOME
+	ld a, SPAWN_DREADED_COVE
 	ld [wDefaultSpawnpoint], a
 
 	ld a, MAPSETUP_WARP
@@ -966,11 +966,12 @@ Intro_PlacePlayerSprite:
 DEF NUM_TITLESCREENOPTIONS EQU const_value
 
 IntroSequence:
-	callfar SplashScreen
-	jr c, StartTitleScreen
-	farcall CrystalIntro
+	; callfar SplashScreen
+	; jr c, StartTitleScreen
+	; farcall CrystalIntro
 
 	; fallthrough
+  jp Intro_MainMenu
 
 StartTitleScreen:
 	ldh a, [rSVBK]
