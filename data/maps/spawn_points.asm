@@ -39,7 +39,7 @@ SpawnPoints:
 	spawn SILVER_CAVE_OUTSIDE,        23, 20
 	spawn FAST_SHIP_CABINS_SW_SSW_NW,  6,  2
 
-	spawn DREADED_COVE,               10, 11
+	spawn DREADED_COVE,               20, 22
 
 	spawn N_A,                        -1, -1
 
